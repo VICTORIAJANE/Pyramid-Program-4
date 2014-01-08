@@ -1,0 +1,12 @@
+void right_side_up(int n)
+{
+    int x,y;
+    for (y= 1; y <= n; y++)
+    {
+        for (x= 0; x < n-y; x++)
+            putchar(' ');
+        for (x= (n-y); x < (n-y)+(2*y-1); x++)
+            putchar('*');
+        putchar('\n');
+    }
+}
